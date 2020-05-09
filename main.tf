@@ -30,10 +30,6 @@ resource "aws_lightsail_instance" "marketing-site" {
   }
 }
 
-resource "aws_lightsail_domain" "marketing-site" {
-  domain_name = "${local.domain_name}"
-}
-
 resource "aws_lightsail_static_ip" "marketing-site" {
   name = "marketing-site-ip"
 }
