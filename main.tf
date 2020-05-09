@@ -24,7 +24,7 @@ resource "aws_lightsail_instance" "marketing-site" {
   name              = "${local.service_name}"
   availability_zone = "us-east-1a"
   blueprint_id      = "wordpress_4_9_8"
-  bundle_id         = "nano_2_0"
+  bundle_id         = "small_2_0"
   tags  = {
     service = "marketing-site"
   }
